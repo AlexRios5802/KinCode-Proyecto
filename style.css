@@ -1,0 +1,211 @@
+/* Estilos simples para la interfaz */
+body {
+    font-family:'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+    background-color: #FBF1F1;
+  }
+  
+  /*estilo para el titulo*/
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e4002b;
+  }
+
+  h2::after{
+    content: "Order Flow";
+    color: #000;
+  }
+
+  #orderContainer{
+    max-width: 90vw; /* Ocupa casi todo el ancho */
+    height: 85vh;     /* Altura casi completa de la ventana */
+    overflow-y: auto; /* Scroll interno si hay mucho contenido */
+    margin: 4vh auto; /* Centrado vertical con espacio arriba/abajo */
+    padding: 20px;
+    background-color: #FFFDFD;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+
+  /*Aqui estan los estilos para una distribucion uniforme de los input*/
+  .form-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .empty-state {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+    color: #777;
+  }
+  /*estilo de la tabla*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    vertical-align: middle;
+    border: none;
+  }
+  
+  td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  thead th{
+    /*background-color: #4CAF50;*/
+    background-color: transparent;
+    color: #999;
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  /*estilo de las celdas*/
+  td{
+    background-color: #ffffff;
+    color: #333;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #E0D8D8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    padding: 15px;
+  } 
+
+  /*estilo para los numeros de ORDEN*/
+  table td:first-child{
+    color: #efa118;
+    font-weight: bold; 
+  }
+
+  /*estilo de los INPUT*/
+  #orden, #principal, #complementos, #postre, #canal, #especificaciones{
+    background-color: transparent;
+    border-radius: 8px;
+    border: 2px solid #E0D8D8;
+    font-size: 14px;
+    flex: 1 1 150px;
+  }
+
+  /*estilo del boton para AGREGAR PEDIDO*/
+  #agregarPedido{
+    background: #e4002b;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 4px 12px;
+  }
+
+  /*estilo para los SELECT en la columna accion*/
+  .select-opt{
+    background-color: #e4002b;
+    color: white;
+    font-weight: bold;
+    /*appearance: none; /*estilo uniforme en navegadores*/
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px #dc3545;
+  }
+
+  .numero-orden{
+    color: #efa118;
+    font-weight: bold;
+  }
+
+  /*
+  .select-opt option{
+    background-color: #d56a73;
+    color: #721c24
+  }*/
+
+  .status-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 2px;
+  }
+
+  /* estilos para los botones */
+.product-cell {
+  padding: 4px;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn-product {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #F6C1C1;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.2s;
+  margin-bottom: 6px;
+}
+
+.btn-rojo {
+  background-color: #F6C1C1;
+  font-weight: bold;
+}
+
+.btn-amarillo {
+  background-color: #FBE2CF;
+}
+
+.btn-verde {
+  background-color: #E0FFCE;
+}
+
+/*estilo para los botones de las CELDAS*/
+.btn-pendiente {
+  background-color: #F6C1C1;
+  font-weight: bold !important;
+  color:#c43232 !important;
+}
+
+.btn-procesando {
+  background-color: #FBE2CF;
+  font-weight: bold !important;
+  color: #eb8c43 !important;
+}
+
+.btn-listo {
+  background-color: #E0FFCE;
+  font-weight: bold !important;
+  color: #5bac2c !important;
+}
+
+.btn-bold{
+  font-weight: bold !important;
+}
+
+.btn-pendiente,
+.btn-pendiente:focus,
+.btn-pendiente:active,
+.btn-procesando,
+.btn-procesando:focus,
+.btn-procesando:active,
+.btn-listo,
+.btn-listo:focus,
+.btn-listo:active {
+  font-weight: bold !important;
+}
+
+  
+  .bg-red-500 { background-color: red; color: white; }
+  .bg-orange-500 { background-color: orange; color: white; }
+  .bg-green-500 { background-color: green; color: white; }
+  .bg-blue-500 { background-color: blue; color: white; }
+  

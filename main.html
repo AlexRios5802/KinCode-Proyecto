@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>McDonald's Order Flow</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>McDonald's </h2>
+
+  <!-- Contenedor del mensaje vacío -->
+  <div id="noOrders" class="empty-state">
+    <p>🍔 Aún no hay pedidos.<br>Cuando llegue uno, aparecerá aquí 🍟</p>
+  </div>
+
+  
+
+  <!-- Contenedor de la tabla -->
+  <div id="orderContainer" style="display: none;">
+    <h3>Agregar nuevo pedido</h3>
+<form id="formPedido" class="form-flex">
+  <input type="text" placeholder="Número de Orden" id="orden" required>
+  <input type="text" placeholder="Principal (coma separada)" id="principal" required>
+  <input type="text" placeholder="Complementos (coma separada)" id="complementos">
+  <input type="text" placeholder="Postre (coma separada)" id="postre">
+  <input type="text" placeholder="Canal (Mostrador, App...)" id="canal">
+  <input type="text" placeholder="Especificaciones (coma separada)" id="especificaciones">
+  <button type="submit" id="agregarPedido">Agregar Pedido</button>
+</form>
+
+    <table border="1" id="orderTable">
+      <thead>
+        <tr>
+          <th>Número de Orden</th>
+          <th>Status</th>
+          <th>Principal</th>
+          <th>Complementos</th>
+          <th>Postre</th>
+          <th>Canal</th>
+          <th>Especificaciones</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="orderBody"></tbody>
+    </table>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
