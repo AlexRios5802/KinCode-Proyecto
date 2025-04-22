@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú McTrío</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <div class="direccion">
+      <img src="mcdonalds_icon.png" alt="logo" class="logo">
+      <p>Retirar en<br><span>Calle 21 No. 331 entre 50 y 52, Locales F1 y F2</span></p>
+      <div class="cart-icon" onclick="mostrarPedido()">🛒</div>
+    </div>
+    <button class="ver-pedido" onclick="mostrarPedido()">Ver pedido</button>
+  </header>
+
+  <main class="menu-container">
+    <!-- Producto 1 con recomendación -->
+    <div class="producto" id="producto1">
+      <div class="contenido">
+        <div class="info">
+          <span class="recomendado">✨ Recomendación</span>
+          <h3>McTrío Mediano<br>Hamburguesa BBQ</h3>
+          <p class="precio">$99</p>
+          <div class="contador">
+            <button class="menos" onclick="cambiarCantidad(1, -1)" id="btnMenos1">–</button>
+            <span id="cantidad1">0</span>
+            <button class="mas" onclick="cambiarCantidad(1, 1)">+</button>
+          </div>
+        </div>
+        <img src="hambur1.png" alt="hamburguesa">
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto" id="producto2">
+      <div class="contenido">
+        <div class="info">
+          <h3>McTrío Mediano<br>Hamburguesa con Queso</h3>
+          <p class="precio">$89</p>
+          <div class="contador">
+            <button class="menos" onclick="cambiarCantidad(2, -1)" id="btnMenos2">–</button>
+            <span id="cantidad2">0</span>
+            <button class="mas" onclick="cambiarCantidad(2, 1)">+</button>
+          </div>
+        </div>
+        <img src="hambur2.png" alt="hamburguesa">
+      </div>
+    </div>
+  </main>
+
+  <div id="carritoPanel" class="carrito-panel">
+    <h2>🛒 Tu pedido</h2>
+    <div id="carritoContenido"></div>
+    <div class="total">
+      Total: <span id="totalPrecio">$0</span>
+    </div>
+    <button onclick="cerrarPedido()" class="cerrar-pedido">Cerrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
