@@ -6,14 +6,20 @@
   <title>Menú McTrío</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
+
 <body>
   <header>
     <div class="direccion">
       <img src="mcdonalds_icon.png" alt="logo" class="logo">
       <p>Retirar en<br><span>Calle 21 No. 331 entre 50 y 52, Locales F1 y F2</span></p>
-      <div class="cart-icon" onclick="mostrarPedido()">🛒</div>
+      <img src="logo-porfile.png" class="logo-porfile"alt="logo-porfile">
+      <img src="Cbro.png" class="logo-porfile"alt="logo-porfile">
     </div>
     <button class="ver-pedido" onclick="mostrarPedido()">Ver pedido</button>
+    <a href="https://702f-202-5-99-112.ngrok-free.app/">
+      <button class="chat-de-voz">Ordenar por voz</button>
+    </a>
+    
   </header>
 
   <main class="menu-container">
@@ -108,6 +114,11 @@
     <button onclick="cerrarPedido()" class="cerrar-pedido">Cerrar</button>
     <button onclick="cerrarPedido()" class="pedir">Pedir</button>
   </div>
+
+  <div id="chat" class="chat">
+    <img src="chat_icon.png" alt="Chat" class="chat-icon" url="">
+  </div>
+
 
   <script src="script.js"></script>
 </body>
